@@ -42,6 +42,16 @@ namespace CursoCPractica6_POO
             miCoche3.setExtras(true, "cuero"); //Ejemplo 4: Asignamos valor a los extras (climatizador y tapicería) desde fuera de la clase Coche
             Console.WriteLine(miCoche3.getExtras()); //Ejemplo 4: Volvemos a leer el valor de los extras. Al haber aplicado el método Setter climatizador=true y tapicería=cuero
 
+            //Quinto ejemplo: Comentarios TODO, varios ficheros fuente (clase Punto en Punto.cs) y compilar
+            realizarTareas(); //Llamamos al método que contiene la llamada a los constructores que están definidos en la clase Punto en otro fichero
+        }
+
+        static void realizarTareas() //Quinto ejemplo: Comentarios TODO, varios ficheros fuente (clase Punto en Punto.cs) y compilar
+        {
+            //TODO: Indica que debemos continuar el desarrollo aquí. Se visualiza en Menú Ver -> Lista de tareas
+            //Los constructores instanciados en este método están en una clase creada en un fichero aparte (menú Proyecto-> Agregar nuevo elemento -> Clase)
+            Punto origen = new Punto(); //Llama al constructor por defecto
+            Punto destino = new Punto(125, 80);//Llama al constructor con parámetros
         }
     }
 
